@@ -1,0 +1,205 @@
+.login_form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(loging_bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.login_form .left img {
+    width: 650px;
+}
+
+.login_form .right {
+    position: relative;
+    top: -50px;
+    left: -60px;
+    padding: 50px 80px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login_form .right h1 {
+    font-family: prevattscriptssk;
+    font-size: 45px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.login_form .right p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.login_form .right .user, .login_form .right .password {
+    border: 2px solid #6c14d0;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.login_form .right .user i, .login_form .right .password i {
+    margin-left: 15px;
+    color: #c72092;
+}
+
+.login_form .right .user input, .login_form .right .password input {
+    flex: 1;
+    margin-left: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+    opacity: 0.7;
+}
+
+.login_form .right .forget {
+    text-align: right;
+    font-size: 12px;
+    color: #6c14d0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.login_form .right button {
+    width: 350px;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    transition: background 0.3s;
+}
+
+.login_form .right button:hover {
+    background: linear-gradient(to right, #6c14d0, #c72092);
+}
+
+.login_form .right .login_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.login_form .right .login_icon a {
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.login_form .right .login_icon img {
+    width: 20px;
+}
+
+.create-account, .back-to-login {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    color: #6c14d0;
+}
+
+.create-account span, .back-to-login span {
+    font-weight: bold;
+    color: #c72092;
+    cursor: pointer;
+}
+
+#signup-form {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Styling for Email Text Box */
+.login_form .right .email {
+    border: 2px solid #6c14d0;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.login_form .right .email i {
+    margin-left: 15px;
+    color: #c72092;
+    font-size: 18px; /* Optional: Adjust icon size */
+}
+
+.login_form .right .email input {
+    flex: 1;
+    margin-left: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    color: #333; /* Text color */
+}
+
+.login_form .right .email input::placeholder {
+    color: black;
+    opacity: 0.7;
+}
+/* Styling for Confirm Password */
+.login_form .right .confirm-password {
+    border: 2px solid #6c14d0;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Adjust spacing as needed */
+}
+
+.login_form .right .confirm-password i {
+    margin-left: 15px;
+    color: #c72092;
+    font-size: 18px; /* Optional: Adjust icon size */
+}
+
+.login_form .right .confirm-password input {
+    flex: 1;
+    margin-left: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    color: #333; /* Text color */
+}
+
+.login_form .right .confirm-password input::placeholder {
+    color: black;
+    opacity: 0.7;
+}

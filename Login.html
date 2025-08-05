@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login_form">
+        <div class="left">
+            <img src="Images/logshoes.png" alt="">
+        </div>
+    
+        <div class="right">
+            <!-- Login Form -->
+            <form action="#" method="post" id="login-form">
+                <h1>WELCOME BACK.</h1>
+                <p>User Name</p>
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="user" placeholder="User Name" class="username">
+                </div>
+    
+                <p class="passworg_tag">Password</p>
+                <div class="password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="text" name="password" placeholder="Password">
+                </div>
+    
+                <p class="forget">Forgot Password?</p>
+                <button type="submit">Login</button>
+    
+                <p class="create-account">
+                    Don't have an account? <span id="show-signup">Create a New Account</span>
+                </p>
+    
+                <div class="login_icon">
+                    <a href="#"><img src="Images/facebook.png" alt=""></a>
+                    <a href="#"><img src="Images/google.png" alt=""></a>
+                    <a href="#"><img src="Images/twitter.png" alt=""></a>
+                </div>
+            </form>
+    
+            <!-- Signup Form -->
+            <form action="#" method="post" id="signup-form" style="display: none;">
+                <h1>CREATE ACCOUNT</h1>
+                <p>User Name</p>
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="user" placeholder="User Name" class="username">
+                </div>
+    
+                <p>Email</p>
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+    
+                <p>Password</p>
+                <div class="password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <p>Confirm Password</p>
+                <div class="password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+    
+                <button type="submit">Sign Up</button>
+    
+                <p class="back-to-login">
+                    Already have an account? <span id="show-login">Login</span>
+                </p>
+            </form>
+        </div>
+    </div>
+<script src="login.js"></script>    
+</body>
+</html>
